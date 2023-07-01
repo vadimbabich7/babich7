@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "scss": "^0.2.4"
+  },
+  "dependencies": {
+    "parcel": "^2.9.3"
+  },
+  "name": "activebox",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "vadimbabich7"
+  },
+  "author": "babich",
+  "license": "ISC"
+}
