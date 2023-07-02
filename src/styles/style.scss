@@ -130,43 +130,43 @@
         }
     }
 
-    &.enter{
-        @media (max-width: 767px){
-            position: fixed;
-            display: block;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            background-image: url(../img/backimgbanner.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            padding: 84px 20px 171px;
-            z-index: -1;
+    // &.enter{
+    //     @media (max-width: 767px){
+    //         position: fixed;
+    //         display: block;
+    //         left: 0;
+    //         top: 0;
+    //         height: 100%;
+    //         width: 100%;
+    //         background-image: url(../img/backimgbanner.jpg);
+    //         background-repeat: no-repeat;
+    //         background-size: cover;
+    //         background-position: center;
+    //         padding: 84px 20px 171px;
+    //         z-index: -1;
 
-            &::before{
-                content: '';
-                display: inline-block;
-                position: absolute;
-                background: #252B49;
-                left: 0;
-                top: 0;
-                z-index: -1;
-                width: 100%;
-                height: 100%;
-                opacity: 0.800000011920929;
-            }
+    //         &::before{
+    //             content: '';
+    //             display: inline-block;
+    //             position: absolute;
+    //             background: #252B49;
+    //             left: 0;
+    //             top: 0;
+    //             z-index: -1;
+    //             width: 100%;
+    //             height: 100%;
+    //             opacity: 0.800000011920929;
+    //         }
 
-            .nav__menu{
-                flex-direction: column;
-            }
+    //         .nav__menu{
+    //             flex-direction: column;
+    //         }
 
-            .nav__item{
-                text-align: left;
-            }
-        }
-    }
+    //         .nav__item{
+    //             text-align: left;
+    //         }
+    //     }
+    // }
 }
 
 .banner{
@@ -178,13 +178,16 @@
     position: relative;
     padding: 230px 0 120px;
     z-index: 1;
+    margin-bottom: 116px;
 
     @media (max-width: 1024px){
         padding: 257px 0 126px;
+        margin-bottom: 78px;
     }
 
     @media (max-width: 767px){
         padding: 106px 0 52px;
+        margin-bottom: 40px;
     }
         
     &::before{
@@ -254,4 +257,97 @@
     }
     
 }
+
+.features{
+    margin-bottom: 116px;
+
+    @media (max-width:1024px){
+        margin-bottom: 80px;
+    }
+    @media (max-width:767px){
+        margin-bottom: 35px;
+    }
+
+}
+
+.container_features{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 31px;
+    row-gap: 88px;
+
+    @media (max-width:1024px){
+        column-gap: 20px;
+        row-gap: 50px;
+    }
+    @media (max-width:767px){
+        min-width: 75px;
+        min-height: 74px;
+        grid-template-columns: 1fr;
+        row-gap: 41px;
+    }
+}
+
+.feature{
+    &__item{
+        margin-bottom: 29px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width:1024px){
+            margin-bottom: 24px;
+        }
+        @media (max-width:767px){
+            margin-bottom: 21px;
+        }
+
+        &_svg{
+            min-width: 100px;
+            min-height: 100px;
+            padding: 5px;
+
+            @media (max-width:1024px){
+                min-width: 85px;
+                min-height: 83px;
+            }
+            @media (max-width:767px){
+                min-width: 75px;
+                min-height: 74px;
+            }
+        }
+    }
+    
+    &__title{
+        line-height: 28px;
+        font-size: 24px;
+        font-weight: 900;
+        font-family: 'Raleway', sans-serif;
+        color: #2D3033;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding: 10px 0;
+
+        @media (max-width:1024px){
+            line-height: 21px;
+            font-size: 18px;
+        }
+    }
+    
+    &__text{
+        line-height: 21px;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Raleway', sans-serif;
+        color: #6C7279;
+
+        @media (max-width:1024px){
+            line-height: 16px;
+            font-size: 14px;
+        }
+    }
+}
+
+
 
