@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ActiveBox</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/style.scss">
 </head>
 <body>
@@ -327,13 +328,73 @@
             </article>
         </div>
     </div>
-    <div class="slider">
+    <div class="swiper slider-block">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slider">
+                <div class="slider__photo">
+                    <img class="slider__img" src="img/bg-woman.jpg" alt="background-woman">
+                </div>
+                <div class="slider__background">
+                    <div class="slider__text">
+                        <h2 class="slider__slogan">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam”</h2>
+                        <p class="slider__name">Susan Sims, Interaction Designer at XYZ</p>
+                    </div>
+                </div>        
+            </div>
+            <div class="swiper-slide slider">
+                <div class="slider__photo">
+                    <img class="slider__img" src="img/bg-woman.jpg" alt="background-woman">
+                </div>
+                <div class="slider__background">
+                    <div class="slider__text">
+                        <h2 class="slider__slogan">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam”</h2>
+                        <p class="slider__name">Susan Sims, Interaction Designer at XYZ</p>
+                    </div>
+                </div>        
+            </div>
+            <div class="swiper-slide slider">
+                <div class="slider__photo">
+                    <img class="slider__img" src="img/bg-woman.jpg" alt="background-woman">
+                </div>
+                <div class="slider__background">
+                    <div class="slider__text">
+                        <h2 class="slider__slogan">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam”</h2>
+                        <p class="slider__name">Susan Sims, Interaction Designer at XYZ</p>
+                    </div>
+                </div>        
+            </div>
+            <div class="swiper-slide slider">
+                <div class="slider__photo">
+                    <img class="slider__img" src="img/bg-woman.jpg" alt="background-woman">
+                </div>
+                <div class="slider__background">
+                    <div class="slider__text">
+                        <h2 class="slider__slogan">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam”</h2>
+                        <p class="slider__name">Susan Sims, Interaction Designer at XYZ</p>
+                    </div>
+                </div>        
+            </div>
+            <div class="swiper-slide slider">
+                <div class="slider__photo">
+                    <img class="slider__img" src="img/bg-woman.jpg" alt="background-woman">
+                </div>
+                <div class="slider__background">
+                    <div class="slider__text">
+                        <h2 class="slider__slogan">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam”</h2>
+                        <p class="slider__name">Susan Sims, Interaction Designer at XYZ</p>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <div class="swiper-pagination "></div>
+    </div>
+    <!-- <div class="slider">
         <div class="slider__photo">
             <img class="slider__img" src="img/bg-woman.jpg" alt="background-woman">
         </div>
         <div class="slider__background">
             <div class="slider__text">
-                <h2 class="slider__slogan">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam.”</h2>
+                <h2 class="slider__slogan">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam”</h2>
                 <p class="slider__name">Susan Sims, Interaction Designer at XYZ</p>
             </div>
         </div>
@@ -344,7 +405,7 @@
             <li class="slider__item"></li>
             <li class="slider__item"></li>
         </ul>
-    </div>
+    </div> -->
     <div class="download">
         <article class="container">
             <h2 class="download__title">Are You Ready to Start? Download Now For Free!</h2>
@@ -397,5 +458,16 @@
                 Made with <span class="footer__signature_span">by Kamal Chaneman</span></p></div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".slider-block", {
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+
 </body> 
 </html>
