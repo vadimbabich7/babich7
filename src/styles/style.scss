@@ -25,6 +25,7 @@
     @media (max-width: 767px){
         padding: 18px;
         max-width: 100%;
+        min-width: 100%;
     }
 
     &:hover{
@@ -141,6 +142,9 @@
 
         @media (max-width:1024px){
             min-width: 112px;
+        }
+        @media (max-width:800px){
+            min-width: 100px;
         }
 
         &:hover{
@@ -603,14 +607,9 @@
 
 .slider{
     display: grid;
-    // margin-bottom: 31px;
     grid-template-columns: 0.97fr 1.03fr;  
 
-    @media (max-width:1024px){
-        margin-bottom: 77.5px;
-    }
     @media (max-width:767px){
-        margin-bottom: 34.5px;
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -645,7 +644,7 @@
 
         @media (max-width:767px){
             grid-column: 1/3;
-            padding: 0 25px 95px 20px;
+            padding: 25px 25px 95px 20px;
         }    
     }
 
